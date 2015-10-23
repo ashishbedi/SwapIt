@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  min-width: 1280px;
+  background-color: #fff;
+}
+
+#swapit {
+  position: relative;
+  width: 387px;
+  margin-top: 50px;
+  margin-left: auto;
+  z-index: 7;
+  min-height: 152px;
+  margin-right: auto;
+}
+
+#logo {
+  float: left;
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin-top: 0;
+  margin-left: 141px;
+  z-index: 6;
+}
+
+#welocme {
+  float: left;
+  position: relative;
+  width: 387px;
+  margin-top: 40px;
+  margin-left: 0;
+  z-index: 2;
+  min-height: 27px;
+  clear: left;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: bold 40px/10px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: none;
+  text-decoration: none;
+  color: #2c2c2c;
+  letter-spacing: normal;
+}
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    min-width: 0;
+  }
+
+  body * {
+    background-size: cover;
+    display: none;
+  }
+
+  #logo {
+    display: block;
+    max-width: 84px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: auto;
+    float: none;
+  }
+
+  #logo *, #welocme * {
+    display: block;
+    min-height: 0;
+  }
+
+  #swapit {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  #welocme {
+    display: block;
+    max-width: 387px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 0;
+    float: none;
+  }
+
+}
